@@ -77,7 +77,7 @@
         $('.temper').html('Current temperature: ' + response.data['current']['temp_f'] + ' F');
         $('.desc').html('Description: ' + response.data['current']['condition']['text']);
     }).catch(function (error) {
-        console.error(error);
+        console.log(error);
     });
 //});
 
