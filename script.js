@@ -60,7 +60,7 @@
 
 // $('input[id=loadWeather]').on('click', async function () {
 //     alert('entered butn click')
-    let thisinp = 'Chapel Hill';
+    let thisinp = $('input[id=inpLoc]').val();
     console.log(thisinp);
     let result = {
         method: 'GET',
