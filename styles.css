@@ -1,0 +1,376 @@
+/* general desktop settings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+
+.home {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+#card1 {
+    background-color: #2a3641;
+    color: #ffffff;
+    padding: 10%;
+}
+
+.weather {
+    margin-top: 45px;
+    font-size: 30px;
+}
+
+#card1 h2 {
+    font-size: 40px;
+}
+
+#inpLoc {
+    height: 50px;
+    width: 70%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#loadWeather {
+    font-size: 20px;
+    width: 30%;
+    height: 40px;
+
+}
+
+#weatherDiv {
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+main a {
+    color: inherit;
+}
+
+main a:hover {
+    color: rgb(212, 176, 16);
+    font-weight: bold;
+}
+
+main {
+    margin-bottom: 5%;
+    width: 64%;
+    margin-left: 18%;
+}
+
+.top {
+    background-image: url("/images/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 35%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#rules {
+    margin-left: 18%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.top h1,
+h5 {
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.top h1 {
+    font-size: 330%;
+}
+
+.top h5 {
+    font-size: 200%;
+    font-weight: normal;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.header {
+    height: 70px;
+    padding: 0 20px;
+    background-color: #2a3641;
+    color: #ffffff;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.menu {
+    float: right;
+    line-height: 70px;
+    z-index: 1;
+}
+
+.menu a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.show,
+.hide {
+    transition: 0.4s;
+    font-size: 30px;
+    display: none;
+}
+
+.show {
+    float: right;
+}
+
+.show i {
+    line-height: 100px;
+}
+
+.menu a:hover {
+    color: rgb(230, 216, 140);
+    font-weight: bold;
+}
+
+#box {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+
+/* .for-more {
+    text-decoration: none;
+    color: rgb(212, 176, 16);
+    font-weight: bold;
+} */
+
+/* .for-more:hover {
+    text-decoration: underline;
+} */
+
+footer {
+    /* margin-top: 3%; */
+    color: white;
+    background-color: #2a3641;
+    padding: 13%;
+    padding-bottom: 2%;
+    bottom: 0;
+}
+
+/* .cr {
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.cr p {
+    padding: 0;
+} */
+
+/* .ftmenu {
+    float: left;
+} */
+
+/* footer p {
+    float: right;
+}
+
+.ftmenu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.ftmenu a:hover {
+    color: rgb(230, 216, 140);
+} */
+
+/* add-on */
+canvas {
+    margin-top: 12%;
+    background: rgb(255, 253, 223);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Additional point (tablets) */
+@media screen and (max-width:700px) {
+    .up img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .up {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #rules {
+        margin-left: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .show,
+    .hide {
+        display: block;
+    }
+
+    #anchor {
+        visibility: hidden;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2a3641;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 70px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 25px;
+    }
+
+    .hide {
+        position: absolute;
+        top: 35px;
+        right: 40px;
+    }
+
+    #box:checked~.menu {
+        right: 0;
+    }
+
+    .logo img {
+        width: 15%;
+
+    }
+
+    .header {
+        height: 70%;
+        width: 100vw;
+    }
+
+    .show i {
+        line-height: 70px;
+    }
+
+    .top {
+        box-sizing: border-box;
+        background-image: url("/images/wallpaper.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        text-align: center;
+        padding-top: 35%;
+        padding-bottom: 50%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .title {
+        color: #ffffff;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .top h5 {
+        padding-top: 3%;
+    }
+
+    .fa-angle-double-down {
+        color: white;
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+}
+
+/* mobile settings */
+@media screen and (max-width:500px) {
+    .header {
+        height: 70%;
+        width: 100vw;
+    }
+
+    /* #anchor {
+        visibility: visible;
+    } */
+
+    #rules {
+        margin-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .top {
+        background-repeat: no-repeat;
+        background-size: 250% 100%;
+        text-align: center;
+        padding-top: 102%;
+        padding-bottom: 10%;
+    }
+
+    .show i {
+        line-height: 40px;
+    }
+
+    .hide {
+        top: 10px;
+        right: 25px;
+    }
+
+    .fa-angle-double-down {
+        color: white;
+        padding-top: 50%;
+        padding-bottom: 0;
+    }
+
+    .wrapper {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .home {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    footer {
+        display: none;
+    }
+
+}
+
+/* setting for the anchor tag */
+@media screen and (min-width:700px) {
+    .anchr {
+        display: none !important;
+    }
+
+    .top {
+        padding-bottom: 2%;
+    }
+}

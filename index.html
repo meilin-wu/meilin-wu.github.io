@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add-on scripts -->
+    <!-- <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fdf87ba31d.js" crossorigin="anonymous"></script>
+    <!-- style sheets -->
+    <!-- <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- header with responsive nav -->
+    <div class="header">
+        <a href="#" class=logo><img src="images/MW_white.png"></a>
+        <input type="checkbox" id="box">
+        <label for="box" class="show">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="/game/game.html">game</a>
+            <label for="box" class="hide">
+                <i class="far fa-times-circle"></i>
+            </label>
+        </ul>
+    </div>
+    <!-- picture with page title -->
+    <div class="top">
+        <div class="title">
+            <h1>Welcome to</h1>
+            <h5>The Ultimate Final Project</h5>
+        </div>
+        <a href="#anchor"><i class="fas fa-angle-double-down fa-2x anchr"></i></a>
+    </div>
+    <!-- main content -->
+    <main class="home">
+        <div id="root">
+            <div id="card1">
+                <h2>
+                    Check current weather in...
+                </h2>
+                <form class="weather">
+                    <label for="location">City:</label>
+                    <br>
+                    <input id="inpLoc" type="text" value="Chapel Hill" name="location">
+                    <input type="submit" id="loadWeather" value="Check">
+                </form>
+            </div>
+        </div>
+        <div id="weatherDiv">
+            <h1 class="location"></h1>
+            <h3 class="temper"></h3>
+            <p class="desc"></p>
+        </div>
+        <!-- #root
+        <div id="root"></div> -->
+        <!-- <button id="bkgndMode">Change Background Mode</button> -->
+    </main>
+    <!-- main content end -->
+
+    <!-- footer -->
+    <footer>
+        <p>Created by Meilin Wu</p> 
+    </footer>
+    
+    <!-- script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

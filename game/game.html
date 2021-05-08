@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add-on scripts -->
+    <!-- <script src="/node_modules/axios/dist/axios.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fdf87ba31d.js" crossorigin="anonymous"></script>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- script -->
+    <title>Game</title>
+</head>
+<body>
+    <!-- header with responsive nav -->
+    <div class="header">
+        <a href="#" class=logo><img src="/images/MW_white.png"></a>
+        <input type="checkbox" id="box">
+        <label for="box" class="show">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="/index.html">Home</a>
+            <label for="box" class="hide">
+                <i class="far fa-times-circle"></i>
+            </label>
+        </ul>
+    </div>
+    <div id="rules">
+        <h3>Welcome to the Game!</h3>
+        <p class="rulestxt">Rules: Move your paddle with left / right arrow keys or your mouse to bounce the ball to hit the bricks!</p>
+    </div>
+    <canvas id="gameCanvas" width="680" height="420"></canvas>
+
+
+    <div id="gameRoot">
+        <p id="game report"></p>
+    </div>
+    
+    <script type="module" src="game.js"></script>
+</body>
+</html>
