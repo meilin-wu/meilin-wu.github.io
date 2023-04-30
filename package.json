@@ -5,7 +5,7 @@
   "main": "script.js",
   "dependencies": {
     "bulma": "^0.9.2",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "jquery": "^3.6.0"
   },
   "devDependencies": {},
